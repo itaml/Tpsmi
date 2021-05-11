@@ -1,0 +1,278 @@
+@font-face {
+    font-family:tile;
+    src: url(3.ttf); 
+   }
+   
+@font-face {
+	font-family:tile1;
+    src: url(1.ttf); 
+}
+   
+button{
+	background:black;
+	color:white;
+	border:none;
+	font-size:30px;
+	font-family:tile1;
+}
+
+button:hover{
+	background:black;
+	color:red;
+	border:none;
+	font-size:30px;
+}
+
+a:hover{
+	color:red;
+	font-family:tile1;
+}
+
+body{
+	margin:0;
+	padding:0;
+	background:#FF8000;
+	font-family:tile1;
+}
+
+#shapka{
+	width:100%;
+	height:23%;
+	background:black;
+	font-family:tile1;
+}
+
+#logo{
+	color:white;
+	padding-top:2%;
+	margin-left:20%;
+	font-size:60px;
+	font-family:tile1;
+	float:left;
+}
+
+#unity{
+	color:white;
+	padding-top:5%;
+	margin-left:40%;
+	font-size:20px;
+}
+
+
+
+#shapka1{
+	width:100%;
+	height:23%;
+	background:black;
+	font-family:tile1;
+	float:left;
+}
+
+#logo1{
+	color:white;
+	padding-top:2%;
+	margin-left:20%;
+	font-size:60px;
+	font-family:tile1;
+	float:left;
+}
+
+#unity1{
+	color:white;
+	padding-top:2%;
+	margin-left:10%;
+	font-size:20px;
+	float:left;
+}
+
+
+#raz{
+	padding-top:2%;
+	margin-left:60%;
+	font-size:30px;
+	color:white;
+}
+
+#raz1{
+	margin-left:80%;
+	font-size:30px;
+	color:white;
+	float:right;
+}
+
+
+a{
+	text-decoration:none;
+	color:white;
+}
+
+.un{
+	color:white;
+	margin-left:5%;
+}
+
+#name{
+	color:black;
+	margin-left:20%;
+	margin-top:5%;
+	font-size:50px;
+	font-family:tile;
+}
+
+/* Собственно сам слайдер */
+.slider{
+	padding-top:5%;
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 40%;
+	padding-bottom:20%;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item {
+    object-fit: cover;
+    width: 40%;
+    height: 60%;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Заголовок слайда */
+.slideText {
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+/* Анимация слайдов */
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.g-1{
+	margin-left:10%;
+	float:left;
+	object-fit: cover;
+    width: 100%;
+    height: 100%;
+	float:left;
+	position: relative;
+}
+
+.g-2{
+	margin-top:45%;
+	margin-left:130%;
+	object-fit: cover;
+    width: 100%;
+    height: 100%;
+	float:left;
+	position: relative;
+}
+
+
+.g-3{
+	margin-top:30%;
+	margin-left:130%;
+	object-fit: cover;
+    width: 100%;
+    height: 100%;
+	float:left;
+	position: relative;
+}
+
+.slideText1 {
+    position: absolute;
+    color: white;
+    font-size:35px;
+	height:30%;
+	width:30%;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 70%;
+    top: 24%;
+    transform: translate(-50%, -50%);
+	font-family:tile;
+}
+
+.slideText2 {
+    position: absolute;
+    color: white;
+    font-size:35px;
+	height:30%;
+	width:30%;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 25%;
+    top: 111%;
+    transform: translate(-50%, -50%);
+	font-family:tile;
+}
+
+.slideText3 {
+    position: absolute;
+    color: black;
+    font-size:50px;
+	height:30%;
+	width:30%;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 65%;
+    top: 24%;
+    transform: translate(-50%, -50%);
+	font-family:tile;
+}
+
+.slideText4 {
+    position: absolute;
+    color: black;
+    font-size:50px;
+	height:30%;
+	width:30%;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 22%;
+    top: 99%;
+    transform: translate(-50%, -50%);
+	font-family:tile;
+}
+
+#last{
+	margin-left:50%;
+	font-size:60px;
+	height:20%;
+	width:100%;
+	color:red;
+	font-family:tile;
+}
+
+#cont{
+	font-size:40px;
+}

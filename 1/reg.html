@@ -1,0 +1,96 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="slide.css">
+</head>
+<body>
+
+<header> 
+<div id = "reg"> <a class = "sh" href = "slide.html#p1"> Акции </a>   <a class = "sh" href = "slide.html#bilet"> Поиск <a class = "sh" href = "search.html"> Регистрация на рейс <a class = "sh" href = "search.html"> Личный кабинет </a> </div>
+
+<div id = "logo"> <a href = "slide.html"> <img src = "img/logo.png" height = "75px"> </a> </div>
+<div id = "logo2"> <a href = "slide.html"> FlightPool </a> </div>
+
+</header>
+
+<div id="window">
+<img src = "img/air2.png" width="1863px" height = "1080"> </img>
+<div id = "nebo">  </div>
+	<div id="red"></div>
+<div id="windowContent">
+<form id="registerForm">
+<label for="name1"><h2>Введите ваше имя:</h2> </label>
+<input type="text" name="name1" id="name1" required placeholder="Name">
+<div class="error" id="name-error"></div>
+<br>
+
+<label for="name2"><h2>Введите вашу фамилию:</h2> </label>
+<input type="text" name="name2" id="name2" required placeholder="Surname">
+<div class="error" id="soname-error"></div>
+<br>
+
+<label for="age"><h2>Введите номер документа:</h2> </label>
+<input type="text" name="age" id="age" required placeholder="age">
+<div class="error" id="age-error"></div>
+<br>
+
+<label for="city"><h2>Введите ваш телефон:</h2> </label>
+<input type="text" name="city" id="city" required placeholder="city">
+<div class="error" id="city-error"></div>
+<br>
+
+<label for="password1"><h2>Введите ваш пароль: </h2></label>
+<input type="password" name="password1" id="password1" class="password-input">
+<br>
+
+<label for="password2"><h2>Повторите ваш пароль: </h2></label>
+<input type="password" name="password2" id="password2" class="password-input">
+<div class="error" id="password-error"></div>
+<br><br>
+<button > Зарегистрироваться </button> <br> <br> <br>
+<a href = "login.html" id = "yarick"> У меня уже есть аккаунт </a>
+</form>
+</div>
+<div id="windowBackground" onclick="closeWindow()"></div>
+</div>
+<script>
+let form = document.getElementById('registerForm');
+form.onsubmit = function(event) {
+
+event.preventDefault();
+
+let name = document.getElementById('name1');
+let surname = document.getElementById('name2');
+let passwords = document.getElementsByClassName('password-input');
+let age = document.getElementById('age');
+
+let nameError = document.getElementById('name-error');
+let surnameError = document.getElementById('soname-error');
+let passwordError = document.getElementById('password-error');
+let ageError=document.getElementById('age-error')
+let cityError=document.getElementById('city-error')
+
+if (name.value.length == 0 || name.value.length > 10) {
+nameError.innerHTML = "Вы не ввели имя или ввели больше 10 символов";
+}
+else if (surname.value.length == 0 || surname.value.length > 12) {
+surnameError.innerHTML = "Вы не ввели фамилию или ввели больше 12 символов";
+}
+else if(passwords[0].value !== passwords[1].value){
+passwordError.innerHTML = "Пароли не совподают!!";
+}
+
+else{
+window.location.href = "slide.html"
+}
+}
+
+ </script>
+ 
+ <footer>
+<div id = "reg1"> <a class = "sh" href = "slide.html"> Главная </a>   <a class = "sh" href = "login.html"> Войти <a class = "sh" href = "reg.html"> Зарегистрироваться <a class = "sh" href = "slide.html"> Новости </a> <a class = "sh" href = "slide.html"> Контакты </a> <a class = "sh" href = "slide.html"> Возврат </a> <a class = "sh" href = "slide.html"> Отзывы </a> <div id = "number"> Телефон “8 (800) 100-10-10” </div> </div>
+</footer>
+ 
+</body>
+</html>

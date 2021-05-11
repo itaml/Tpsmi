@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="slide.css">
+</head>
+<body>
+
+<header> 
+<div id = "reg"> <a class = "sh" href = "#p1"> Акции </a>   <a class = "sh" href = "#bilet"> Поиск <a class = "sh" href = "search.html"> Регистрация на рейс <a class = "sh" href = "search.html"> Личный кабинет </a> </div>
+
+<div id = "logo"> <a href = "slide.html"> <img src = "img/logo.png" height = "75px"> </a> </div>
+<div id = "logo2"> <a href = "slide.html"> FlightPool </a> </div>
+
+</header>
+
+<main>
+<div id = "dov-img"> <img src = "img/1.png"> </img> </div> 
+<div id = "dov-text"><h1> Почему мы? </h1> Основная причина – нам очень нравится делать то, что мы делаем: дарить радость нашим покупателям! Мы общаемся с Клиентами с удовольствием, потому что нам самим нравятся все, что мы продаем – это качественные и позитивные вещи, которые поднимают настроение. Мы очень внимательно и индивидуально подходим к каждому Клиенту и помогаем выбрать именно то, что нужно </div>
+
+<div id = "bilet"> <h2> Поиск </h2>
+
+<form id = "registerForm">
+<div> <label class = "inp-text"> Откуда </label> <input required type="text" class = "inp-text"> </input>  
+<label class = "inp-text"> Куда </label> <input required type="text" class = "inp-text"> </input> 
+<label class = "inp-text"> Туда </label> <input required type="date" class = "inp-text"> </input> 
+<label class = "inp-text"> Обратно </label> <input required type="date" class = "inp-text"> </input> 
+<label class = "inp-text"> Кол-во пассажиров (от 1 до 8) </label> <input required type="number" class = "inp-text" min="1" max="8"> </input> 
+</div>
+<button class = "bilet" type="submit"> Найти билет(ы) </button>
+</div>
+</form>
+
+
+<div id = "p1" class="slider"> <h2 class = "slide-name">Акции</h2>
+    <div class="item">
+        <img src="img/p1.jpg" alt="Первый слайд">
+        <div class="slideText"><h3> Возврат и обмен билетов </h3>
+		Пандемия изменила планы многих путешественников, но мы знаем, что она не будет длиться вечно.
+Как только все это закончится, мы продолжим исследовать этот мир так, как мы привыкли.
+Специальные правила, разработанные для этой сложной ситуации, помогут вам отменить поездку.
+или отложить на потом
+		</div>
+		
+    </div>
+
+    <div class="item">
+        <img src="img/p2.jpg" alt="Второй слайд">
+        <div class="slideText"><h3> Лучшие предложения </h3>
+		Чтобы снова увидеть улицы, которые так много видели. Обнять своих любимых и оглянуться, чтобы увидеть
+через что вы прошли. И думать о новых мечтах, которые будут такими особенными
+		</div>
+    </div>
+
+    <div class="item">
+        <img src="img/p3.jpg" alt="Третий слайд">
+        <div class="slideText"><h3> Увидимся чаще </h3>
+		С начала января мы расширяем географию полетов по России, чтобы вы могли
+чаще видитесь с близкими. Выбирайте нашу компанию, чтобы лететь туда, где вас всегда ждут.
+		</div>
+    </div>
+	
+	<div class="item">
+        <img src="img/p4.jpg" alt="Четвертый слайд">
+        <div class="slideText"><h3> Все снова включено </h3>
+		С 10 августа возобновляем полеты в Турцию. Рейсы из Москвы в Анталию будут выполняться дважды.
+в сутки ежедневно, а рейсы по маршруту Москва-Даламан будут выполняться от трех до семи раз в неделю.
+		</div>
+    </div>
+
+    <a class="prev" onclick="minusSlide()">&#10094;</a>
+    <a class="next" onclick="plusSlide()">&#10095;</a>
+</div>
+
+<div id = "pass"> <h2>Подписка на закрытые акции </h2> 
+<label class = "inp-text"> Введите ваш email <input type = "email" class = "inp-text"> </input> </label>
+<button class = "bilet2"> Оформить подписку </button>
+</div>
+
+<script src="slide.js"></script>	
+</script>
+<script>
+let form = document.getElementById('registerForm');
+form.onsubmit = function(event) {
+
+event.preventDefault();
+
+window.location.href = "search.html"
+
+}
+</script>
+
+</main>
+
+<footer>
+<div id = "reg1"> <a class = "sh" href = "slide.html"> Главная </a>   <a class = "sh" href = "login.html"> Войти <a class = "sh" href = "reg.html"> Зарегистрироваться <a class = "sh" href = "slide.html"> Новости </a> <a class = "sh" href = "slide.html"> Контакты </a> <a class = "sh" href = "slide.html"> Возврат </a> <a class = "sh" href = "slide.html"> Отзывы </a> <div id = "number"> Телефон “8 (800) 100-10-10” </div> </div>
+</footer>
+
+</body>
+</html>

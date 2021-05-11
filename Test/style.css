@@ -1,0 +1,27 @@
+body {
+     background: #666666  top center repeat-y;
+}
+
+textarea {
+  resize:none;
+}
+
+#mainBlock{
+	margin-left:25%;
+	width:50%;
+	height:100%;
+	background:white;
+}
+
+#inp{
+	padding-top:10%;
+	padding-left:5%;
+}
+
+#okay{
+	width:10%;
+	height:5%;
+	margin-left:5%;
+}
+
+

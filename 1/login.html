@@ -1,0 +1,72 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="slide.css">
+</head>
+<body>
+
+<header> 
+<div id = "reg"> <a class = "sh" href = "slide.html#p1"> Акции </a>   <a class = "sh" href = "slide.html#bilet"> Поиск <a class = "sh" href = "search.html"> Регистрация на рейс <a class = "sh" href = "search.html"> Личный кабинет </a> </div>
+
+<div id = "logo"> <a href = "slide.html"> <img src = "img/logo.png" height = "75px"> </a> </div>
+<div id = "logo2"> <a href = "slide.html"> FlightPool </a> </div>
+
+</header>
+
+<div id="window">
+<img src = "img/air2.png" width="1863px" height = "1080"> </img>
+<div id="red"></div>
+<div id="windowContent">
+
+<form id="registerForm">
+<label for="name1"><h2>Введите ваш телефон:</h2></label>
+<input type="text" name="name1" id="name1" required placeholder="Имя Фамилия">
+<div class="error" id="name-error"></div>
+<br>
+
+<label for="password1"><h2>Введите ваш пароль:</h2> </label>
+<input type="password" name="password1" id="password1">
+<div class = "error" id="password-error"> </div>
+<br><br>
+
+<button> Войти </button> <br> <br>
+<div id="noac"><a href = "reg.html" id = "yarick"> У меня нет аккаунта </a></div>
+</form>
+</div>
+<div id="windowBackground" onclick="closeWindow()"></div>
+</div>
+<script>
+let form = document.getElementById('registerForm');
+form.onsubmit = function(event) {
+
+event.preventDefault();
+
+let name = document.getElementById('name1');
+let password = document.getElementById('password1');
+
+let nameError = document.getElementById('name-error');
+let passwordError = document.getElementById('password-error');
+
+if (name.value.length == 0 || name.value.length > 10) {
+nameError.innerHTML = "Вы не ввели имя или ввели больше 10 символов";
+}
+
+if (password.value.length == 0 || password.value.length > 10) {
+passwordError.innerHTML = "Введите корректный пароль";
+}
+
+
+else{
+window.location.href = "slide.html"
+}
+}
+
+ </script>
+ 
+  <footer>
+<div id = "reg1"> <a class = "sh" href = "slide.html"> Главная </a>   <a class = "sh" href = "login.html"> Войти <a class = "sh" href = "reg.html"> Зарегистрироваться <a class = "sh" href = "slide.html"> Новости </a> <a class = "sh" href = "slide.html"> Контакты </a> <a class = "sh" href = "slide.html"> Возврат </a> <a class = "sh" href = "slide.html"> Отзывы </a> <div id = "number"> Телефон “8 (800) 100-10-10” </div> </div>
+</footer>
+ 
+</body>
+</html>

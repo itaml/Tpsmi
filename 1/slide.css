@@ -1,0 +1,256 @@
+.slider{
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    height: 300px;
+    margin-bottom: 15px;
+}
+.slide-name{
+	margin-left:11%;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 500px;
+    height: 357px;
+    border: none !important;
+    box-shadow: none !important;
+	margin-left:10%;
+}
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.slider .prev{
+	margin-left:10%;
+}
+
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+	margin-left:24.6%;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Заголовок слайда */
+
+.slideText {
+	margin-left:12%;
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+/* Кружочки */
+.slider-dots {
+    text-align: center;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+/* Анимация слайдов */
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@font-face{
+	font-family:Roboto Black;
+	src: url("fonts/Roboto-Black.ttf");
+}
+
+#shapka{
+	height:10%;
+	width:40%;
+	margin-left:22%;
+	font-size:25px;
+	padding-top:20px;
+	display: table-cell;
+}
+
+body{
+	margin:0;
+	padding:0;
+	background:#E0FFFF;
+	font-family:Roboto Black;
+}
+
+a{
+	text-decoration:none;
+	color:black;
+}
+
+
+a.sh{
+	margin-left:40px;
+    text-decoration:none;
+	color:white;
+}
+
+a:hover{
+	color:red;
+}
+
+a.al{
+color:white;
+}
+
+button{
+	font-family:Roboto Black;
+	background:#E0FFFF;
+	border:none;
+}
+
+#reg{
+padding-top:2%;
+padding-left:34%;
+width:20%;
+height:5%;
+font-size:25px;
+display: table-cell;
+background:blue;
+padding-bottom:5%;
+}
+
+#logo{
+	height:20px;
+	width:20px;
+	margin-left:45%;
+	margin-top:1%;
+}
+
+#logo2{
+font-size:35px;
+margin-left:47.5%;
+margin-top:4%;
+margin-bottom:5%;
+}
+
+#dov-text{
+	width:20%;
+	height:20%;
+	margin-left:60%;
+	padding-top:10%;
+	font-size:20px;
+	margin-bottom:10%;
+}
+#dov-img{
+	width:20%;
+	height:20%;
+	margin-left:20%;
+	margin-top:10%;
+	float:left;
+}
+
+#bilet{
+	width:80%;
+	height:50%;
+	margin-left:15%;
+	margin-bottom:5%;
+}
+
+
+.inp-text{
+	margin-left:2%;
+	opacity:80%;
+}
+
+.inp-text1{
+	margin-left:5%;
+}
+
+.bilet{
+	margin-left:80%;
+	margin-top:2%;
+}
+
+.bilet2{
+	margin-left:10%;
+	margin-bottom:5%;
+}
+
+#pass{
+	margin-top:10%;
+	margin-left:15%;
+}
+
+footer{
+	width:100%;
+	height:150px;
+	background:blue;
+}
+
+#reg1{
+padding-top:2%;
+padding-left:20%;
+width:20%;
+height:5%;
+font-size:25px;
+display: table-cell;
+background:blue;
+padding-bottom:5%;
+}
+
+#number{
+	padding-top:4%;
+	font-size:20px;
+	color:white;
+}
+
+#reys {
+ margin-top:5%;
+}
+
+#data{
+	margin-top:3%;
+}
+
+
